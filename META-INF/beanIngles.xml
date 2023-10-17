@@ -10,5 +10,10 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
+    <bean id="saludoBean" class="idiomas.Ingles" />
+
+    <bean id="Greeting" class="org.example.Greeting">
+        <property name="saludo" ref="saludoBean" />
+    </bean>
 
 </beans>
